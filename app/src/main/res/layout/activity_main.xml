@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:text="@string/enter_feedback_detail_to_send_to_the_developer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email" />
+
+    <Spinner
+        android:id="@+id/some_spinner"
+        android:layout_width="310dp"
+        android:layout_height="37dp" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="310dp"
+        android:layout_height="150dp"
+        android:gravity="bottom"
+        android:hint="@string/review"
+        android:inputType="text|textMultiLine" />
+
+    <CheckBox android:id="@+id/checkbox_cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/would_you_like_an_email_response"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/submit_btn" />
+
+</LinearLayout>
